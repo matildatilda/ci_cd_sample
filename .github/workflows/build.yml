@@ -19,14 +19,13 @@ jobs:
       - name: docker login
         uses: docker/login-action@v3
         with:
-          registry: docker.io
           username: matildatila
           password: ${{ secrets.DOCKER_REGISTRY_TOKEN }}
       - name: create metadata
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: docker.io/matildatilda/hello_docker
+          images: matildatilda/hello_docker
           tags: |
             type=raw,value=1.0
             type=sha,prefix=,suffix=,format=short
