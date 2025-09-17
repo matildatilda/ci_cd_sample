@@ -17,7 +17,7 @@ jobs:
         uses: docker/login-action@v3
         with:
           registory: ghcr.io
-          usename: ${{ github.actor }}
+          username: ${{ github.actor }}
           password: $${{ secrets.DOCKER_REGISTORY_TOKEN }}
       - name: create metadata
         id: meta
