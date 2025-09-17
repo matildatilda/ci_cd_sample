@@ -21,7 +21,7 @@ jobs:
           password: $${{ secrets.DOCKER_REGISTORY_TOKEN }}
       - name: create metadata
         id: meta
-        uses: docker/metadata-actions@v5
+        uses: docker/metadata-action@v5
         with:
           images: ghcr.io/matildatilda/hello_docker
           tags: |
