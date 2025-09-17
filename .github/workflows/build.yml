@@ -23,7 +23,7 @@ jobs:
         id: meta
         uses: docker/metadata-actions@v5
         with:
-          images: ghcr.io/${{ github.actor }}/hello_docker
+          images: ghcr.io/matildatilda/hello_docker
           tags: |
             type=raw,value=1.0
             type=sha,prefix=,suffix=,format=short
