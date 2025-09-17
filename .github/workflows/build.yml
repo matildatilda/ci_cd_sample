@@ -28,7 +28,7 @@ jobs:
             type=raw,value=1.0
             type=sha,prefix=,suffix=,format=short
       - name: build and push
-        uses: docker/build-push-actions@v5
+        uses: docker/build-push-action@v5
         with:
           file: ./docker/Dockerfile
           push: true
