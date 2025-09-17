@@ -1,4 +1,4 @@
-name: Build Container Image
+name: Pull and Run Container Image
 on:
   workflow_dispatch:  # 手動実行ボタンを追加
   push:
