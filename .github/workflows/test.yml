@@ -12,10 +12,10 @@ jobs:
     image: docker.io/matildatilda/hello_docker:1.0
   steps:
     - name: docker login
-        uses: docker/login-action@v3
-        with:
-          username: matildatilda
-          password: ${{ secrets.DOCKER_REGISTRY_TOKEN }}
+      uses: docker/login-action@v3
+      with:
+        username: matildatilda
+        password: ${{ secrets.DOCKER_REGISTRY_TOKEN }}
     - name: pull image
       run: docker pull matildatilda/hello_docker:1.0
     - name: run image
